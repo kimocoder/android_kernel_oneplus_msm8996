@@ -39,7 +39,7 @@ import subprocess
 # Note that gcc uses unicode, which may depend on the locale.  TODO:
 # force LANG to be set to en_US.UTF-8 to get consistent warnings.
 
-allowed_warnings = set([
+allowed_warnings = {
     "fdt.c:932",
     "hid-magicmouse.c:579",
     "sysrq.c:956",
@@ -47,7 +47,7 @@ allowed_warnings = set([
     "pppopns.c:296",
     "pppopns.c:305",
     "pppopns.c:336",
- ])
+}
 
 # Capture the name of the object file, can find it.
 ofile = None
